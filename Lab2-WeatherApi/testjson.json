@@ -1,0 +1,93 @@
+{
+  "response": {
+  "version":"0.1",
+  "termsofService":"http://www.wunderground.com/weather/api/d/terms.html",
+  "features": {
+  "conditions": 1
+  }
+	}
+  ,	"current_observation": {
+		"image": {
+		"url":"http://icons.wxug.com/graphics/wu2/logo_130x80.png",
+		"title":"Weather Underground",
+		"link":"http://www.wunderground.com"
+		},
+		"display_location": {
+		"full":"Troy, NY",
+		"city":"Troy",
+		"state":"NY",
+		"state_name":"New York",
+		"country":"US",
+		"country_iso3166":"US",
+		"zip":"12180",
+		"magic":"1",
+		"wmo":"99999",
+		"latitude":"42.72000122",
+		"longitude":"-73.66999817",
+		"elevation":"73.2"
+		},
+		"observation_location": {
+		"full":"Sycaway, Troy, New York",
+		"city":"Sycaway, Troy",
+		"state":"New York",
+		"country":"US",
+		"country_iso3166":"US",
+		"latitude":"42.728954",
+		"longitude":"-73.659195",
+		"elevation":"406 ft"
+		},
+		"estimated": {
+		},
+		"station_id":"KNYTROY11",
+		"observation_time":"Last Updated on February 8, 8:58 PM EST",
+		"observation_time_rfc822":"Thu, 08 Feb 2018 20:58:28 -0500",
+		"observation_epoch":"1518141508",
+		"local_time_rfc822":"Thu, 08 Feb 2018 21:07:02 -0500",
+		"local_epoch":"1518142022",
+		"local_tz_short":"EST",
+		"local_tz_long":"America/New_York",
+		"local_tz_offset":"-0500",
+		"weather":"Partly Cloudy",
+		"temperature_string":"16.2 F (-8.8 C)",
+		"temp_f":16.2,
+		"temp_c":-8.8,
+		"relative_humidity":"72%",
+		"wind_string":"Calm",
+		"wind_dir":"WNW",
+		"wind_degrees":285,
+		"wind_mph":0.0,
+		"wind_gust_mph":0,
+		"wind_kph":0,
+		"wind_gust_kph":0,
+		"pressure_mb":"1029",
+		"pressure_in":"30.39",
+		"pressure_trend":"0",
+		"dewpoint_string":"9 F (-13 C)",
+		"dewpoint_f":9,
+		"dewpoint_c":-13,
+		"heat_index_string":"NA",
+		"heat_index_f":"NA",
+		"heat_index_c":"NA",
+		"windchill_string":"16 F (-9 C)",
+		"windchill_f":"16",
+		"windchill_c":"-9",
+		"feelslike_string":"16 F (-9 C)",
+		"feelslike_f":"16",
+		"feelslike_c":"-9",
+		"visibility_mi":"10.0",
+		"visibility_km":"16.1",
+		"solarradiation":"0",
+		"UV":"0.0","precip_1hr_string":"0.00 in ( 0 mm)",
+		"precip_1hr_in":"0.00",
+		"precip_1hr_metric":" 0",
+		"precip_today_string":"0.00 in (0 mm)",
+		"precip_today_in":"0.00",
+		"precip_today_metric":"0",
+		"icon":"partlycloudy",
+		"icon_url":"http://icons.wxug.com/i/c/k/nt_partlycloudy.gif",
+		"forecast_url":"http://www.wunderground.com/US/NY/Troy.html",
+		"history_url":"http://www.wunderground.com/weatherstation/WXDailyHistory.asp?ID=KNYTROY11",
+		"ob_url":"http://www.wunderground.com/cgi-bin/findweather/getForecast?query=42.728954,-73.659195",
+		"nowcast":""
+	}
+}

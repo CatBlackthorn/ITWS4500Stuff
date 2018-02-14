@@ -1,0 +1,46 @@
+
+#tweetbox{
+    width: 70%;
+    height: 90%;
+    background-color: #ccffff;
+}
+
+section {
+    width: 70%;
+    position: block;
+    height: 90%;
+    margin: auto;
+    margin-top: 2.5%;
+}
+
+.tweet {
+    width: 70%;
+    margin: auto;
+    background-color: #ffffff;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    padding: .5em;
+    border: solid;
+    border-size: 3px;
+    border-color: grey;
+}
+
+caption {
+    display: inline;
+    position: left;
+    width: 15em;
+}
+
+p {
+    display: inline;
+}
+
+.hashes {
+    display: inline;
+}
+
+img {
+    height: 50px;
+    width: 50px;
+    display:inline;
+}

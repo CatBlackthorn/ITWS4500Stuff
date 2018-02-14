@@ -1,0 +1,60 @@
+body {
+    background-image: url("background.png");
+    background-size: 100%;
+    font-family: 'Trade Winds', cursive;
+}
+
+.currentBox {
+    border-style: solid;
+    border-color: grey;
+    border-width: .5em;
+    border-radius: 2em;
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    margin-top: 2em;
+    overflow: hidden;
+    background: white;
+}
+
+h1, h4 {
+    text-align: center;
+}
+
+img {
+    display: inline;
+    width: 75px;
+    height: 75px;
+    float: left;
+    margin-left: 8em;
+}
+
+section {
+    display: inline;
+    float: left;
+}
+
+.forecastBox {
+    border-style: solid;
+    border-color: grey;
+    border-width: .5em;
+    border-radius: 2em;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 2em;
+    background-color: grey;
+}
+
+.block {
+    border-style: solid;
+    border-color: lightgrey;
+    border-width: .25em;
+    border-radius: 2em;
+    overflow: hidden;
+    width: 25em;
+    display: inline-block;
+    height: 15em;
+    background-color: white;
+    margin: .5em;
+}

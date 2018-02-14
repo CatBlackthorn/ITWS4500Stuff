@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?taskcoach release="1.4.3" tskversion="37"?>
+
+<tasks>
+<task actualstartdate="2018-02-13 21:03:10.396000" completiondate="2018-02-13 21:03:10.693000" creationDateTime="2018-02-13 21:02:06.627000" duedate="2018-02-15 00:00:00" id="0ee9cf30-112b-11e8-88a2-28b2bd27c210" modificationDateTime="2018-02-13 21:03:10.693000" percentageComplete="100" plannedstartdate="2018-02-13 21:02:00" priority="3" status="1" subject="Lab3">
+<description>
+Install a local bug tracking software
+</description>
+</task>
+<syncmlconfig>
+<TaskCoach-00000161920bf1905976ecc7000a00fe00fe00fd>
+<spds>
+<sources>
+<TaskCoach-00000161920bf1905976ecc7000a00fe00fe00fd.Tasks />
+<TaskCoach-00000161920bf1905976ecc7000a00fe00fe00fd.Notes />
+</sources>
+<syncml>
+<Auth />
+<Conn />
+</syncml>
+</spds>
+</TaskCoach-00000161920bf1905976ecc7000a00fe00fe00fd>
+</syncmlconfig>
+<guid>
+00000161920bf1905976ecc7000a00fe00fe00fd
+</guid>
+</tasks>
