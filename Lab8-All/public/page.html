@@ -1,0 +1,76 @@
+<!doctype html>
+<html ng-app="indexApp">
+
+	<head>
+		
+	</head>
+	
+	<body>
+		
+		<div class="container page" ng-controller="tweetRead">
+			<nav class="navbar fixed-top">
+				<div class="navbar-header">
+					<button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="sr-only">Toggle navigation</span>
+					</button>
+					<a class="navbar-brand" href="index.html">Lab4</a>
+				</div>
+				<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+					<ul class="nav navbar-nav">
+					</ul>
+					
+				</div>
+			</nav>
+            <input class="btn btn-outline-error my-2 my-sm-0" ng-click='search($event)' type="submit" name="delete" value="Clear Table">
+			<form class="navbar-form navbar-right">
+                <input class="form-control mr-sm-2" type="text" ng-model="q" aria-label="Search">
+                <input class="form-control mr-sm-2" type="number" ng-model="count" aria-label="Count">
+                <input class="btn btn-outline-success my-2 my-sm-0" ng-click='search($event)' type="submit" name="search" value="Search">
+                <input class="btn btn-outline-success my-2 my-sm-0" ng-click='search($event)' type="submit" name="display" value="Display">
+            </form>
+            <form class="navbar-form navbar-right">
+                <input class="form-control mr-sm-2" type="text" ng-model="fileName" aria-label="FileName">
+                <select id="types" name="types">
+                    <option value="json">JSON</option>
+                    <option value="csv">CSV</option>
+                    <option value="xml">XML</option>
+                </select>
+                <input class="btn btn-outline-success my-2 my-sm-0" ng-click='search($event)' type="submit" name="export" value="Export">
+                
+            </form>
+			<div class="tweetBox" ng-repeat="entry in tweets">
+				<br/><br/>
+                <h3>{{entry.date}}</h3>
+                <div ng-repeat="tweet in entry.tweets" class="tweet">
+                    <figure class="userInfo">
+                        <img ng-src="{{tweet.user.profile_image_url_https}}" err-src="hold.png">
+                        <caption>{{tweet.user.name}}</caption>
+                    </figure>
+                    <br/>
+                    <p class="centered">{{tweet.text}}</p>
+                    
+                </div>
+				<br/>
+			</div>
+		
+			<footer class="footer">
+			
+			</footer>
+		
+		</div>
+
+		<!-- Placed at the end of the document so the pages load faster -->
+		<!-- AngularJS -->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+		<script src="angular.js"></script>
+        
+
+		<!-- Bootstrap core CSS -->
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+
+		<!-- Custom styles for this template -->
+		<link href="lab4.css" type="text/css" rel="stylesheet"/>
+			
+	</body>
+	
+</html>

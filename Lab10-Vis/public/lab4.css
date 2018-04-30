@@ -1,0 +1,167 @@
+html, body {
+	padding:0;
+	margin:0;
+	height:100%;
+}
+
+.navbar {
+	background-color: blue;
+}
+
+.navbar .navbar-nav>li>a {
+	color: white;
+}
+
+.navbar .navbar-nav>li>a:hover {
+	background-color: darkblue;
+}
+
+.navbar .navbar-brand {
+	color: #FFFFFF;
+}
+
+#hamburger {
+	color: #FFFFFF;
+	background-color: #FFFFFF;
+}
+
+.page {
+	box-sizing: border-box;
+	min-height: 100%;
+    position: relative;
+	padding: 0 10px 120px 10px;
+    background: lightblue;
+}
+
+.footer {
+    position: absolute;
+	box-sizing: border-box;
+	border-radius: 5px;
+    bottom: 0;
+    width: 98%;
+    height: 60px;
+    line-height: 60px;
+    background-color: blue;
+	color: #FFFFFF;
+	display: block;
+	margin: 0;
+    padding-right: 10px;
+}
+
+.centered {
+	text-align: center;
+}
+
+.big {
+	font-size: 4em;
+}
+
+.icon-bar {
+	background-color: white;
+}
+
+h2 {
+	text-align: center;
+    font-family: "Arial Black", Gadget, sans-serif;
+}
+
+#tweetbox{
+    width: 70%;
+    height: 90%;
+    background-color: #ccffff;
+}
+
+.tweet {
+    width: 70%;
+    margin: auto;
+    background-color: #ffffff;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    padding: .5em;
+    border: solid;
+    border-size: 3px;
+    border-color: grey;
+}
+
+h4 {
+    display: inline;
+    position: center;
+    text-align: center;
+    width: 15em;
+    font-weight: bold;
+}
+
+p {
+    display: inline;
+}
+
+.hashes {
+    display: inline;
+}
+
+img {
+    height: 50px;
+    width: 50px;
+    display:inline;
+}
+
+.space {
+    width: 15%;
+}
+
+.minispace {
+    width: 15%;
+}
+
+form {
+    padding-right: 5px;
+}
+
+@media only screen and (max-width: 380px) {
+    .tweet {
+        width: 95%;
+    }
+    
+    .spacer, .minispace {
+        width: 0%;
+    }
+    
+    .tweetBox {
+        width: 100%;
+    }
+}
+
+.btn-outline-error {
+    background-color: orange;
+}
+
+.btn-outline-success {
+    background-color: green;
+    color: white;
+}
+
+.welcome {
+    width: 80%;
+    text-align: center;
+    position: relative;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+@media screen and (max-width: 900px) {
+    .tweet {
+        width: 95%;
+    }
+    
+    .space {
+        width: 5%
+    }
+    
+    .minispace {
+        width: 2.5%;
+    }
+    
+    .tweetBox {
+        width: 90%;
+    }
+}

@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+
+	<head>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="  crossorigin="anonymous"></script>
+	</head>
+	
+	<body>
+		<form action="http://localhost:3000/refresh">
+            
+            <input type="submit" value="Refresh">
+        </form>
+        <form name="code" action="http://localhost:3000/conditions">
+            Zipcode:<br>
+            <input id="zip" type="number" name="zipcode" value="12180"><br>
+            <input type="submit" value="Run">
+        </form>
+        
+        <script>
+            function getAnswers() {
+                data = { "zipcode":document.forms["code"]["zipcode"].value };
+                $.ajax({
+                    type: 'GET',
+                    data: data,
+                    contentType: 'application/json',
+                    url: 'http://localhost:3000/conditions',						
+                    success: function(resp) {
+                        console.log(resp)
+                        body = JSON.parse(resp);
+                        console.log('success');
+                        p = document.createElement("p");
+                        answer = body.current_observation.display_location.full + " is ";
+      
+                        temp = parseInt(body.current_observation.temp_c);
+                        switch (temp) {
+                            case temp <= 0:
+                                answer += "Freezing";
+                                p.setAttribute("class","freeze")
+                                break;
+                            case temp <= 10:
+                                answer += "Cold";
+                                p.setAttribute("class","cold")
+                                break;
+                            case temp <= 25:
+                                answer += "Warm";
+                                p.setAttribute("class","warm")
+                                break;
+                            case temp > 25:
+                                answer += "Hot";
+                                p.setAttribute("class","hot")
+                                
+                        }  
+                        p.innerHTML = answer;
+                        document.getElementsByTagName("BODY")[0].appendChild(box);
+    
+                   }
+                });
+            }
+            
+        </script>
+	</body>
+	
+</html>

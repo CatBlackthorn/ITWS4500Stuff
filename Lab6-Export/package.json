@@ -1,0 +1,9 @@
+{
+  "lockfileVersion": 1,
+  "dependencies": {
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "json2csv": "^4.0.1",
+    "request": "^2.83.0"
+  }
+}
